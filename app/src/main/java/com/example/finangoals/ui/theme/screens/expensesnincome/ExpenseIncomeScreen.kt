@@ -357,7 +357,7 @@ fun TransactionItem(transaction: TransactionData, edit: (String) -> Unit, delete
         ) {
             Column(
                 modifier = Modifier
-                    .fillMaxWidth(0.72f)
+                    .fillMaxWidth(0.6f)
             ) {
                 Text(buildAnnotatedString {
                     withStyle(style = SpanStyle(fontWeight = FontWeight.Normal)) {
@@ -376,7 +376,7 @@ fun TransactionItem(transaction: TransactionData, edit: (String) -> Unit, delete
             Row(
                 modifier = Modifier.fillMaxWidth()
             ){
-                Spacer(modifier = Modifier.weight(1f))
+                Spacer(modifier = Modifier.weight(1.2f))
                 IconButton(onClick = { edit(transaction.id) }) {
                     Icon(
                         imageVector = ImageVector.vectorResource(id = R.drawable.pencil),

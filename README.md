@@ -6,6 +6,7 @@ Proyecto de fin de ciclo de DAM
 FinanGoals es una aplicación de gestión de finanzas personales, dónde el usuario podrá fijar unos objetivos financieros a alcanzar en base 
 a su ahorro, resultado de la diferencia entre los ingresos y gastos del usuario, y el plazo fijado para alcanzar sus metas.
 El usuario podrá realizar las funcionalidades habituales de un CRUD, no sólo con las metas sino también a la hora de actualizar sus ingresos y gastos.
+Además FinanGoals podrá enviar mediante campañas notificaciones a los usuarios con consejos para incentivar el ahorro y así alcanzar antes sus objetivos.
 
 ### Pantalla de Login.
 

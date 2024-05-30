@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.FinanGoals" parent="android:Theme.Material.Light.NoActionBar" />
+<!-- Tema personalizado para DatePickerDialog -->
+    <style name="CustomDatePickerDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/orange_sec</item>
+        <item name="android:textColorPrimary">@color/orange</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+</resources>

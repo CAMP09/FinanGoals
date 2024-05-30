@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "259338151060",
+    "project_id": "finangoals-6ce40",
+    "storage_bucket": "finangoals-6ce40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259338151060:android:559a4fa1b37b0067a9c081",
+        "android_client_info": {
+          "package_name": "com.example.finangoals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259338151060-al02rgrd4l39p58jg4onvg3ara6ru6cm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.finangoals",
+            "certificate_hash": "fbb14b6718a82c099ea15ed62bf76e53e9678555"
+          }
+        },
+        {
+          "client_id": "259338151060-u0to0d5knu0qesg3qkfs0m4gmm9mp7h3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.finangoals",
+            "certificate_hash": "23ce1741434866f1488ba466cefce171f816dc7c"
+          }
+        },
+        {
+          "client_id": "259338151060-i5p2prr72jhkomf1d85the7rshsbhe24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC5j1MtmRjhB89lbNTS4fsXm_ozpOE_IA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259338151060-i5p2prr72jhkomf1d85the7rshsbhe24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

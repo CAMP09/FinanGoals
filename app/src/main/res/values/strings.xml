@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FinanGoals</string>
+    <string name="default_web_client_id">tu_id_cliente_web.apps.googleusercontent.com</string>
+    <string name="default_notification_channel_id">default_fcm_channel_id</string>
+</resources>

@@ -163,7 +163,7 @@ fun LoginScreen(navController: NavHostController, authController: AuthController
              */
             Box(modifier = Modifier.padding(innerPadding)) {
                 Column(
-                    modifier = Modifier.padding(16.dp),
+                    modifier = Modifier.padding(8.dp),
                     horizontalAlignment = Alignment.CenterHorizontally,
                 ) {
 

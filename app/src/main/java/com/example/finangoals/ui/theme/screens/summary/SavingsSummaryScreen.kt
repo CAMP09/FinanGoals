@@ -204,14 +204,22 @@ fun GoalSummaryItem(goal: FirestoreManagerData, totalAport: MutableState<Double>
                         val aportacionValue = newAportacion.toDoubleOrNull()
                         if (aportacionValue != null && aportacionValue <= updatedSavings.value) {
                             val totalNewAportacion = goal.aport + aportacionValue
-                            totalAport.value += aportacionValue
-                            firestoreManager.updateGoalAport(goal.id, totalNewAportacion, {
-                                goal.aport = totalNewAportacion
-                                showDialog = false
-                                newAportacion = ""
-                            }, { error ->
-                                Toast.makeText(context, "Error al actualizar aportación: $error", Toast.LENGTH_SHORT).show()
-                            })
+                            if (totalNewAportacion > goal.amount) {
+                                Toast.makeText(context, "La aportación no puede superar al importe fijado en el objetivo", Toast.LENGTH_SHORT).show()
+                            } else {
+                                totalAport.value += aportacionValue
+                                firestoreManager.updateGoalAport(goal.id, totalNewAportacion, {
+                                    goal.aport = totalNewAportacion
+                                    showDialog = false
+                                    newAportacion = ""
+                                }, { error ->
+                                    Toast.makeText(
+                                        context,
+                                        "Error al actualizar aportación: $error",
+                                        Toast.LENGTH_SHORT
+                                    ).show()
+                                })
+                            }
                         } else {
                             Toast.makeText(context, "La aportación no puede ser mayor a tus ahorros actuales o inválida", Toast.LENGTH_SHORT).show()
                         }

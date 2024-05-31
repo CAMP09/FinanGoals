@@ -209,7 +209,7 @@ fun GoalTopBar(navController: NavHostController) {
             containerColor = Orange,
             titleContentColor = White
         ),
-        actions = {
+        navigationIcon = {
             IconButton(onClick = {
                 navController.popBackStack() }) {
                 Icon(imageVector = Icons.Filled.ArrowBack, contentDescription = "Volver", tint = White)
